@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="container_heading">Timer</span>
+
+        <div class="container_title">
+            <p>Hours</p>
+            <p>Mins</p>
+            <p>Secs</p>
+        </div>
+
+
+        <div class="container_inputs">
+            <input 
+                class="hours"
+                type="number" 
+                maxlength="2"
+                placeholder="00"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+            <input
+                class="mins" 
+                type="number" 
+                maxlength="2"
+                placeholder="00"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+            <input 
+                class="secs"
+                type="number" 
+                maxlength="2"
+                placeholder="00"
+                oninput="this.value = this.value.slice(0, this.maxLength)"
+            >
+        </div>
+
+        <div class="container_btns">
+            <button class="container_start-btn">Start</button>
+            <button class="container_stop-btn">Stop</button>
+            <button class="container_reset-btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>

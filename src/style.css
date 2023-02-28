@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 450px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.container .container_heading{
+    font-size: 50px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container .container_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.container .container_title p{
+    width: 10%;
+    align-items: center;
+}
+
+.container .container_inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .container_inputs input{
+    width: 10%;
+    height: 50px;
+}
+
+.container .container_inputs input::placeholder{
+    text-align: center;
+}
+
+.container .container_btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.container .container_btns button{
+    font-size: larger;
+    padding: 5px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.container .container_btns .container_start-btn{
+    background-color: teal;
+    color: white;
+}
+
+.container .container_btns .container_stop-btn{
+    display: none;
+    background-color: orange;
+    color: white;
+}
+.container .container_btns .container_reset-btn{
+    background-color: skyblue;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
